@@ -29,7 +29,13 @@ html {
 .sidebar.closed {
   width: 80px;
 }
-
+.icon-row1{
+  display: none;
+}
+#sidebar.closed {
+  transform: translateX(-0%); 
+  transition: none; 
+}
 #sidebar-icon {
   position: absolute;
   top: 97.5%;
@@ -51,7 +57,9 @@ html {
 .sidebar.closed .nav-text133 {
   display: none;
 }
-
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
 /* Sidebar header */
 .sidebar-header {
   display: flex;
@@ -191,7 +199,7 @@ html {
   justify-content: center;
   opacity: 0.7;
 }
-.imgfolder{
+.imgfolder, .imgfolder1{
   color: rgba(51, 51, 51, 1);
 }
 .nav-text133 {
@@ -205,9 +213,7 @@ html {
   margin-right: 0px;
 }
 
-.sidebar::-webkit-scrollbar {
-  width: 0px;
-}
+
 .nav-list .icon {
   padding: 4.8px 0;
   gap: 15px;
@@ -1092,21 +1098,7 @@ display: none;
   display: none;
 
 }
-.sidebar {
-  width: 259px;
-  position: relative;
-}
 
-.sidebar.closed {
-  width: 80px;
-}
-.icon-row1{
-  display: none;
-}
-#sidebar.closed {
-  transform: translateX(-0%); 
-  transition: none; 
-}
 .radiooo{
   justify-content: center;
   align-items: center;
@@ -1115,3 +1107,5 @@ display: none;
 .radiooo label{
 padding-bottom: 6px;
 }
+
+
