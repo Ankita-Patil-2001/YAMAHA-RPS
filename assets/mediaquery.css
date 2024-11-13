@@ -1171,6 +1171,10 @@
     padding-top: 5px;
     display: none;
   }
+  .dot1{
+    margin-top: 15px;
+    margin-right: 5px;
+  }
 }
 @media (min-width: 344px)  {
   .header h1 {
