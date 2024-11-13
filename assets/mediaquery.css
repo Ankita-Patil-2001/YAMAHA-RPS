@@ -111,26 +111,20 @@
     width: 100%;
   
   }
-  
 
 
-  .row {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding-right: 130px;
-    gap: 100px;
-}
+
+ 
   .header{
     display: flex;
     flex-direction: row;
     justify-items: center;
     justify-content: center;
   }
+
   .input-group input,
   .input-group select {
     padding: 20px;
-    width: 500px;
     border-radius: 10px;
     justify-content: space-between;
 
@@ -841,8 +835,9 @@
       font-weight: 500;
       line-height: 18px;
       text-align: left;
+      margin-bottom: 0px;
       color: #333333;
-      padding: 8px 8px 16px 8px;
+      padding: 8px 8px 6px 8px;
       border-radius: 16px 16px 0px 0px;
       opacity: 1; /* Make sure opacity is visible */
   }
@@ -873,13 +868,15 @@
    display: flex;
    flex-direction: column;
    align-items: center;  
+   justify-items: center;
+   padding: 20px;
    
    
   }
   .row {
     display: flex;
     flex-flow: column;
-    width: 300px;
+    width: 100%;
     margin-bottom: 0px;
   }
 
@@ -914,9 +911,13 @@ width: 100%;
     display: flex;
     flex-flow: column;
   }
+  /* .status{
+    padding: 20px;
+  } */
 
   .status2 {
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -924,10 +925,13 @@ width: 100%;
   }
   .status2-content1,
   .status2-content2 {
-    width: 300px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 19px;
+    padding: 0px 13px 0px 13px;
+    /* padding-left: 19px; */
+    /* align-items: center; */
+   
   }
 
   .reset-btn {
@@ -936,9 +940,12 @@ width: 100%;
 
   .status label {
     font-size: 14px;
+    padding-left: 10px;
   }
   .status2 label {
     font-size: 14px;
+    padding-left: 0px;
+    padding: 0;
   }
   .apply-btn {
     font-size: 14px;
