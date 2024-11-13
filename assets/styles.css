@@ -1109,3 +1109,47 @@ padding-bottom: 6px;
 }
 
 
+/* Base sidebar styles */
+.sidebar {
+  position: relative;
+  width: 259px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+/* Navigation list styles */
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: transparent;
+  backdrop-filter: none;
+  transition: background 0.3s ease;
+  min-height: 100%;
+}
+
+/* Only show background when sidebar is open */
+#sidebar:not(.closed) .nav-list {
+  background: #edf4ffe5;
+  backdrop-filter: blur(44.356666564941406px);
+}
+#sidebar.closed .nav-list {
+  pointer-events: none;
+}
+#sidebar.closed .nav-list li {
+  pointer-events: auto;
+}
+
+.nav-list li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.main-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
